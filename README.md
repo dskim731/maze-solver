@@ -1,1 +1,1 @@
-# maze-solver
+# Maze Solver Project from Boot.dev
