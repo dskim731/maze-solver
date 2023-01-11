@@ -11,6 +11,7 @@ class Cell:
         self._x2 = None
         self._y1 = None
         self._y2 = None
+        self.visited = False
         self._win = win
 
     def draw(self, x1, y1, x2, y2):
@@ -32,6 +33,8 @@ class Cell:
         if self.bottom_wall:
             line = Line(Point(x1, y2), Point(x2, y2))
             self._win.draw_line(line)
+        else:
+            self._win.draw_line(line, fill_color="white")
 
     def draw_move(self, to_cell, undo=False):
         if self._win is None:
