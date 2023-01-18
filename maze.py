@@ -177,4 +177,4 @@ class Maze:
         return False
 
     def solve(self):
-        return self._solve_r(0, 0)
+        return self.solve_r(0, 0)
